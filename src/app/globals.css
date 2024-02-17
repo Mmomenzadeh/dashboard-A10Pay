@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+
+@layer components {
+  .bg-dark {
+    background: linear-gradient(0deg, #131517, #131517),
+      linear-gradient(0deg, #1d1f20, #1d1f20);
+  }
+
+  .border-dark500 {
+    @apply border-solid border-b border-b-dark-500;
+  }
+}
