@@ -31,6 +31,9 @@ const config: Config = {
           450: "#95FFA0",
         },
       },
+      boxShadow: {
+        green: "0px 4px 24px 0px #CCFF0126",
+      },
 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -39,6 +42,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 export default config;

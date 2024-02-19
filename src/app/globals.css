@@ -14,7 +14,23 @@
       linear-gradient(0deg, #1d1f20, #1d1f20);
   }
 
-  .border-dark500 {
-    @apply border-solid border-b border-b-dark-500;
+  .overlay-bg {
+    @apply backdrop-blur bg-black/5;
+  }
+  .bt-hover_cyan {
+    @apply border-solid border border-cyan;
+  }
+  .bt-hover_cyan:hover {
+    @apply bg-transparent text-cyan border-solid border border-[#CCFF01];
+  }
+
+  .pending {
+    @apply bg-orange-450/10 text-orange-450;
+  }
+  .canceled {
+    @apply bg-red-450/10 text-red-450;
+  }
+  .received {
+    @apply bg-green-450/10 text-green-450;
   }
 }

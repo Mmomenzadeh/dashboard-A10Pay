@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps) {
       <SideBar />
       <div className="w-full ">
         <Header />
-        {children}
+        <div className="px-10 py-[22px]">{children}</div>
       </div>
     </div>
   );

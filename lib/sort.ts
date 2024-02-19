@@ -1,0 +1,65 @@
+export const sort = [
+  {
+    id: 1,
+    name: "Invoice ID",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "Store",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "Wallet",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "Crypto amount",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "Token & network",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "Value",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [
+      "Equals to",
+      "Not equals to",
+      "Be equal to or greater than",
+      "Greater than",
+      "Be equal to or less than",
+      "Less than",
+      "Is null",
+      "Is not null",
+    ],
+  },
+  {
+    id: 1,
+    name: "Date",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "Status",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+  {
+    id: 1,
+    name: "More",
+    svg: "/images/AdvancedFilters/filter.png",
+    subSort: [],
+  },
+];

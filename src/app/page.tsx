@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Invoices from "./Invoices/page";
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-red-300"></h1>
+      <Invoices />
     </>
   );
 }
