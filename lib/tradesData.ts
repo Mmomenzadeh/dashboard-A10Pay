@@ -6,7 +6,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -23,7 +23,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -40,7 +40,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -57,7 +57,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -74,7 +74,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -91,7 +91,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -108,7 +108,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",
@@ -125,7 +125,7 @@ export const tradesData = [
     type: "USDT",
     amount: "$1,500.00",
     network: "USD TRC20",
-    date: "4/20/2023 at 12:00 PM",
+    date: "4/20/2023  ",
     status: "Received",
     details: {
       PayerID: "0123456789",

@@ -8,10 +8,11 @@ import React from "react";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import { LuPlus, LuSettings2 } from "react-icons/lu";
 import { RiSearchLine } from "react-icons/ri";
+import { sort } from "../../../lib/sort";
 
 export default function Invoices() {
   return (
-    <div className="bg-dark rounded-lg px-6 h-600 2xl:h-[780px] overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-cyan">
+    <div className="bg-dark rounded-lg  md:px-6 h-600 2xl:h-[780px] overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-cyan">
       {/* ......Header.... */}
       <div className="flex justify-between items-center pt-6">
         <div className="hidden lg:flex items-center gap-x-[14px]">
@@ -34,10 +35,10 @@ export default function Invoices() {
             <span>New Invoice</span>
           </Button>
         </div>
-
-        <div className="w-full flex items-center justify-between ">
+        {/* down 1024px width */}
+        <div className="w-full flex lg:hidden items-center justify-between ">
           <Button
-            className="flex items-center gap-x-2 text-cyan  capitalize text-sm  2xl:text-base border-solid 
+            className="flex items-center gap-x-2 text-cyan  capitalize text-xs md:text-sm   border-solid 
           
           border border-cyan px-3 py-2 rounded-lg
           
@@ -48,12 +49,12 @@ export default function Invoices() {
             <span>Advanced Filters</span>
           </Button>
 
-          <div className="flex items-center gap-x-4">
-            <Button className=" flex items-center gap-x-2 bg-cyan  py-2 lg:h-10 px-2 xl:py-2 xl:px-4 rounded-lg text-black  bt-hover_cyan font-bold text-xs lg:text-sm  xl:text-base ">
+          <div className="hidden md:flex items-center gap-x-4">
+            <Button className=" flex items-center gap-x-1 md:gap-x-2 bg-cyan py-1 md:py-2  px-2 rounded-lg text-black  bt-hover_cyan font-bold text-[10px] md:text-xs  ">
               <LuPlus />
               <span>Import Invoice</span>
             </Button>
-            <Button className=" flex items-center gap-x-2 bg-cyan  py-2 lg:h-10 px-2 xl:py-2 xl:px-4 rounded-lg text-black  bt-hover_cyan font-bold text-xs lg:text-sm  xl:text-base ">
+            <Button className=" flex items-center gap-x-1 md:gap-x-2 bg-cyan py-1 md:py-2  px-2 rounded-lg text-black  bt-hover_cyan font-bold text-[10px] md:text-xs  ">
               <LuPlus />
               <span>New Invoice</span>
             </Button>
@@ -80,6 +81,25 @@ export default function Invoices() {
             <AdvancedFilters />
           </div>
           {/* down 1024px width */}
+
+          <tr className="flex justify-between items-center   p-3 pt-10">
+            {sort?.map((item, index) => (
+              <div
+                className=" flex flex-col items-center gap-3  text-cloud-100"
+                key={index}
+              >
+                <span className=" text-sm  xl:text-sm 2xl:text-base">
+                  {4 === index + 1
+                    ? "amount"
+                    : 5 === index + 1
+                    ? "network"
+                    : item.name}
+
+                  {/* {item.name} */}
+                </span>
+              </div>
+            ))}
+          </tr>
         </thead>
         {/* ......table body ..... */}
         <InvoicesTrade />
