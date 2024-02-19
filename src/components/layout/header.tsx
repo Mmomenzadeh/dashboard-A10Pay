@@ -59,27 +59,27 @@ export default function Header() {
           h-screen  w-64 px-2 bg-dark border-solid border-r border-r-dark-500 overflow-auto scrollbar-none
           `}
           >
-            <div className="w-full flex items-center justify-between    mb-10 mt-[25px] ">
+            <div className="w-full flex items-center justify-between    my-5  ">
               <Logo />
               <div onClick={() => setShowMenu(false)}>
                 <IoIosCloseCircleOutline size={24} className="text-cyan" />
               </div>
             </div>
 
-            <div className=" flex flex-col gap-y-3 ">
+            <div className=" flex flex-col gap-y-2 ">
               {sideBarLink?.map((item, index) => (
                 <>
                   <Link
                     href={item.srcLink}
-                    className="flex items-center justify-between  py-1 px-3 hover:bg-cloud-900 rounded-lg"
+                    className="flex items-center justify-between  py-2 px-1 hover:bg-cloud-900 rounded-lg"
                     key={index}
                     onClick={() => setOpenDropdownsMenu(!openDropdownsMenu)}
                   >
                     <div className="flex items-center gap-x-3">
-                      <span className="block w-4 h-4">
+                      <span className="block w-5 h-5">
                         <img src={item.svg} alt={item.title} />
                       </span>
-                      <span className="text-cloud-100 font-[500] capitalize text-sm leading-6">
+                      <span className="text-cloud-100 font-[500] capitalize text-base leading-6">
                         {item.title}
                       </span>
                     </div>
