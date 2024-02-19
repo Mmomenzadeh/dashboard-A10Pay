@@ -12,7 +12,7 @@ export default function SideBar() {
   return (
     <>
       {/* up 1024px width */}
-      <aside className="hidden lg:block w-28 lg:w-40 xl:w-64 px-3 lg:px-2 xl:px-3 bg-dark border-solid border-r border-r-dark-500 overflow-auto scrollbar-none">
+      <aside className="hidden lg:block w-28 lg:w-40 xl:w-64 px-3 lg:px-2 xl:px-3 bg-dark border-solid border-r border-r-dark-500 h-screen overflow-auto scrollbar-none">
         <div className="mb-10 mt-[25px] flex-center">
           <Logo />
         </div>
