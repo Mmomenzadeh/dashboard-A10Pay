@@ -71,15 +71,15 @@ export default function Header() {
                 <>
                   <Link
                     href={item.srcLink}
-                    className="flex items-center justify-between  py-3 px-3 hover:bg-cloud-900 rounded-lg"
+                    className="flex items-center justify-between  py-1 px-3 hover:bg-cloud-900 rounded-lg"
                     key={index}
                     onClick={() => setOpenDropdownsMenu(!openDropdownsMenu)}
                   >
                     <div className="flex items-center gap-x-3">
-                      <span className="block w-6 h-6">
+                      <span className="block w-4 h-4">
                         <img src={item.svg} alt={item.title} />
                       </span>
-                      <span className="text-cloud-100 font-[500] capitalize font-base leading-6">
+                      <span className="text-cloud-100 font-[500] capitalize text-sm leading-6">
                         {item.title}
                       </span>
                     </div>
@@ -99,7 +99,7 @@ export default function Header() {
                       {item.subMenu?.map((item, index) => (
                         <Link
                           href={item.srcLink}
-                          className={`flex items-center justify-between  py-3 px-5  rounded-lg ${
+                          className={`flex items-center text-sm justify-between  py-1 px-3  rounded-lg ${
                             active === item.id
                               ? "bg-cyan shadow-green text-black"
                               : "hover:bg-cloud-900 text-cloud-100"
@@ -107,7 +107,7 @@ export default function Header() {
                           key={index}
                           onClick={() => setActive(item.id)}
                         >
-                          <span className=" font-[500] capitalize font-base leading-6">
+                          <span className=" font-[500] capitalize text-xs leading-6">
                             {item.title}
                           </span>
                         </Link>
