@@ -56,7 +56,7 @@ export default function Header() {
             className={`  
           fixed ${showMenu ? "left-0" : "-left-72"}
           z-20 transition-all  top-0
-          h-screen  w-64 px-2 bg-dark border-solid border-r border-r-dark-500 overflow-auto scrollbar-none
+          h-full  w-64 px-2 bg-dark border-solid border-r border-r-dark-500 overflow-auto scrollbar-none
           `}
           >
             <div className="w-full flex items-center justify-between    my-5  ">

@@ -9,7 +9,7 @@ export default function MenuMobile() {
   return (
     <div
       className=" lg:hidden
-    bg-dark absolute bottom-[10%] left-0 right-0 mx-auto w-[90%] flex justify-between items-center text-cloud-100 text-2xl sm:text-3xl  px-3 border-solid border border-dark-500 rounded-2xl"
+    bg-dark absolute bottom-0 left-0 right-0 mx-auto w-[90%] flex justify-between items-center text-cloud-100 text-2xl sm:text-3xl  px-3 border-solid border border-dark-500 rounded-2xl"
     >
       <div>
         <HiOutlineHome />
