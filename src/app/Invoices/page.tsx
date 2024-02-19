@@ -12,7 +12,7 @@ import { sort } from "../../../lib/sort";
 
 export default function Invoices() {
   return (
-    <div className="bg-dark rounded-lg  md:px-6 h-600 2xl:h-[780px] overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-cyan">
+    <div className="bg-dark rounded-lg  md:px-6 h-auto  overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-cyan">
       {/* ......Header.... */}
       <div className="flex justify-between items-center pt-6">
         <div className="hidden lg:flex items-center gap-x-[14px]">
