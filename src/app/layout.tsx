@@ -22,7 +22,9 @@ export default function RootLayout({ children }: any) {
 
           <div className="w-full ">
             <Header />
-            <div className=" px-3 sm:px-5 xl:px-10 py-[22px] ">{children}</div>
+            <div className=" px-3 sm:px-5 xl:px-10 py-[22px] mb-5 lg:mb-0">
+              {children}
+            </div>
           </div>
         </div>
       </body>

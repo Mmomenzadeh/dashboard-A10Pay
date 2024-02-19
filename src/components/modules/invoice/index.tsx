@@ -37,7 +37,7 @@ export default function Invoice({
             {status}
           </Button>
         </td>
-        <td className="hidden sm:inline-block">
+        <td className="hidden sm:inline-block cursor-pointer">
           <IoIosArrowForward />
         </td>
       </tr>
