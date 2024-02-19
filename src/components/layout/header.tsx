@@ -39,6 +39,8 @@ export default function Header() {
         <div className=" text-white " onClick={() => setShowMenu(true)}>
           <BiMenuAltLeft size={32} />
         </div>
+
+        <h1 className="capitalize text-white font-bold text-lg">Invoices</h1>
         <div className=" flex items-center gap-x-3 text-white">
           <div>
             <HiOutlineBell size={22} />

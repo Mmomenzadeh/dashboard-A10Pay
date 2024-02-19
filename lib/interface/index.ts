@@ -3,6 +3,7 @@ export interface LayoutProps {
 }
 
 export interface InvoiceProps {
+  id: number;
   currencyName: string;
   exchange: string;
   type: string;

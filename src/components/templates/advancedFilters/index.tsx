@@ -10,9 +10,9 @@ export default function AdvancedFilters() {
           className=" flex flex-col items-center gap-3  text-cloud-100"
           key={index}
         >
-          <span>{item.name}</span>
+          <span className="text-xs xl:text-sm 2xl:text-base">{item.name}</span>
 
-          <div className="bg-cloud-900 py-1 px-2 rounded-lg w-[100px] ">
+          <div className="bg-cloud-900 py-1 px-2 rounded-lg w-16 xl:w-24 2xl:w-[100px] ">
             <Input className=" bg-transparent pl-4" type="text">
               <img
                 src={item.svg}

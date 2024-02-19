@@ -4,12 +4,12 @@ import Invoice from "@/components/modules/invoice";
 
 export default function InvoicesTrade() {
   return (
-    <div className=" mt-8">
-      {tradesData?.map((item, index) => (
+    <tbody className="flex flex-col  pt-8 pb-11 ">
+      {tradesData?.slice(0, 6)?.map((item, index) => (
         <>
           <Invoice {...item} key={index} />
         </>
       ))}
-    </div>
+    </tbody>
   );
 }

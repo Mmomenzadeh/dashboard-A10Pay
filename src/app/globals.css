@@ -33,4 +33,8 @@
   .received {
     @apply bg-green-450/10 text-green-450;
   }
+
+  .table-dark tbody tr:nth-child(even) {
+    @apply w-full bg-dark-500 rounded-lg;
+  }
 }

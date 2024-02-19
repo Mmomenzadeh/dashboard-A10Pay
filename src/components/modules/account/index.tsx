@@ -3,7 +3,7 @@ import { TbArrowsTransferUp } from "react-icons/tb";
 
 export default function Account() {
   return (
-    <div className="w-full flex items-center justify-between   border-solid border-t border-t-dark-500 py-5">
+    <div className="hidden xl:flex w-full  items-center justify-between   border-solid border-t border-t-dark-500 py-5">
       <div className="flex items-center gap-x-[14px]">
         <div className="w-10 h-10">
           <img src="/images/account/profile.png" alt="profile" />
