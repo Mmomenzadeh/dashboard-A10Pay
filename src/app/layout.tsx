@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
-      <body className={`bg-dark-800 relative ${inter.className}`}>
+      <body className={`bg-dark-800 relative h-screen ${inter.className}`}>
         <div className="w-full  flex">
           <SideBar />
 
