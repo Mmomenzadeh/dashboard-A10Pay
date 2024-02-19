@@ -28,7 +28,7 @@ export default function Invoice({
         <td>{date}</td>
         <td>
           <Button
-            className={`py-1 px-2 rounded-lg ${
+            className={`py-1 px-2 rounded-lg min-w-14 md:min-w-[85px] ${
               (status === "Received" && "received") ||
               (status === "Pending" && "pending") ||
               (status === "Canceled" && "canceled")

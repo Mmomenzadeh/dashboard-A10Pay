@@ -64,40 +64,38 @@ export default function Invoices() {
 
       {/* ...... table ..... */}
       <table className="table-dark w-full">
-        <thead>
-          {/* up 1024px width */}
-          <div className="hidden lg:block">
-            <div className="flex items-center gap-x-6 py-5 2xl:py-10">
-              <div className=" flex items-center gap-x-2 text-cyan  capitalize text-sm  2xl:text-base ">
-                <LuSettings2 />
+        {/* up 1024px width */}
+        <thead className="hidden lg:block">
+          <div className="flex items-center gap-x-6 py-5 2xl:py-10">
+            <div className=" flex items-center gap-x-2 text-cyan  capitalize text-sm  2xl:text-base ">
+              <LuSettings2 />
 
-                <span>Advanced Filters</span>
-              </div>
-
-              <Button className="bg-cloud-900 py-2 px-4 text-white rounded-lg text-sm  2xl:text-base">
-                Clear
-              </Button>
+              <span>Advanced Filters</span>
             </div>
-            <AdvancedFilters />
-          </div>
-          {/* down 1024px width */}
 
-          <tr className="lg:hidden w-full flex justify-between items-center    p-3 pt-10">
+            <Button className="bg-cloud-900 py-2 px-4 text-white rounded-lg text-sm  2xl:text-base">
+              Clear
+            </Button>
+          </div>
+          <AdvancedFilters />
+        </thead>
+
+        {/* down 1024px width */}
+        <thead className="lg:hidden">
+          <tr className=" w-full flex justify-between items-center    py-3  pt-10">
             {sort?.map((item, index) => (
-              <div
-                className=" flex flex-col items-center gap-3  text-cloud-100"
+              <td
+                className={`w-full flex justify-center  text-cloud-100 ${
+                  item.id === 2 ||
+                  item.id === 3 ||
+                  item.id === 5 ||
+                  item.id === 8
+                    ? "hidden sm:inline-flex"
+                    : ""
+                }`}
                 key={index}
               >
-                <span
-                  className={`text-sm  xl:text-sm 2xl:text-base ${
-                    item.id === 2 ||
-                    item.id === 3 ||
-                    item.id === 5 ||
-                    item.id === 8
-                      ? "hidden sm:inline-block"
-                      : ""
-                  }`}
-                >
+                <span className={`text-sm  xl:text-sm 2xl:text-base `}>
                   {4 === index + 1
                     ? "amount"
                     : 5 === index + 1
@@ -106,7 +104,7 @@ export default function Invoices() {
 
                   {/* {item.name} */}
                 </span>
-              </div>
+              </td>
             ))}
           </tr>
         </thead>
