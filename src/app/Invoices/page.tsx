@@ -66,7 +66,7 @@ export default function Invoices() {
       <table className="table-dark w-full">
         <thead>
           {/* up 1024px width */}
-          <div className="hidden flex:block">
+          <div className="hidden lg:block">
             <div className="flex items-center gap-x-6 py-5 2xl:py-10">
               <div className=" flex items-center gap-x-2 text-cyan  capitalize text-sm  2xl:text-base ">
                 <LuSettings2 />
@@ -82,13 +82,22 @@ export default function Invoices() {
           </div>
           {/* down 1024px width */}
 
-          <tr className="flex justify-between items-center   p-3 pt-10">
+          <tr className="lg:hidden w-full flex justify-between items-center    p-3 pt-10">
             {sort?.map((item, index) => (
               <div
                 className=" flex flex-col items-center gap-3  text-cloud-100"
                 key={index}
               >
-                <span className=" text-sm  xl:text-sm 2xl:text-base">
+                <span
+                  className={`text-sm  xl:text-sm 2xl:text-base ${
+                    item.id === 2 ||
+                    item.id === 3 ||
+                    item.id === 5 ||
+                    item.id === 8
+                      ? "hidden sm:inline-block"
+                      : ""
+                  }`}
+                >
                   {4 === index + 1
                     ? "amount"
                     : 5 === index + 1
@@ -110,6 +119,8 @@ export default function Invoices() {
           <Pagination />
         </tfoot>
       </table>
+
+      {/*  ...... table in mobile mode ..... */}
     </div>
   );
 }

@@ -24,7 +24,7 @@ export const tradesData = [
     amount: "$1,500.00",
     network: "USD TRC20",
     date: "4/20/2023  ",
-    status: "Received",
+    status: "Canceled",
     details: {
       PayerID: "0123456789",
       TXID: "0123456789",
@@ -41,7 +41,7 @@ export const tradesData = [
     amount: "$1,500.00",
     network: "USD TRC20",
     date: "4/20/2023  ",
-    status: "Received",
+    status: "Pending",
     details: {
       PayerID: "0123456789",
       TXID: "0123456789",
@@ -58,7 +58,7 @@ export const tradesData = [
     amount: "$1,500.00",
     network: "USD TRC20",
     date: "4/20/2023  ",
-    status: "Received",
+    status: "Canceled",
     details: {
       PayerID: "0123456789",
       TXID: "0123456789",
